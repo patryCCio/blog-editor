@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "museo";
+    src: url("./fonts/museo/Museo300-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "museo-bold";
+    src: url("./fonts/museo/Museo700-Regular.otf") format("opentype");
+}
+
+*:not(.list-ps, .list-ul-ps, .codex-editor, .codex-editor-narrow) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: "museo", sans-serif;
+    font-weight: 300;
+}

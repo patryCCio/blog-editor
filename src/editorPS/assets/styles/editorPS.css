@@ -1,0 +1,1439 @@
+.ct .ct__content {
+  padding: 10px;
+}
+
+.ce-inline-toolbar__toggler-and-button-wrapper {
+  padding: 10px;
+  gap: 10px;
+}
+.ce-inline-toolbar__toggler-and-button-wrapper .ce-inline-toolbar__dropdown {
+  padding: 5px;
+}
+.ce-inline-toolbar__toggler-and-button-wrapper .ce-inline-toolbar__buttons {
+  padding: 8px;
+  gap: 5px;
+}
+.ce-inline-toolbar__toggler-and-button-wrapper .ce-inline-toolbar__buttons button svg {
+  width: 25px;
+  height: 25px;
+}
+
+.ce-conversion-toolbar .ce-conversion-toolbar__label,
+.ce-conversion-toolbar--showed .ce-conversion-toolbar__label {
+  padding: 10px;
+  padding-left: 15px;
+}
+.ce-conversion-toolbar .ce-conversion-toolbar__tools,
+.ce-conversion-toolbar--showed .ce-conversion-toolbar__tools {
+  padding: 10px;
+  padding-top: 0;
+}
+.ce-conversion-toolbar .ce-conversion-toolbar__tools .ce-conversion-tool,
+.ce-conversion-toolbar--showed .ce-conversion-toolbar__tools .ce-conversion-tool {
+  padding: 10px 5px;
+  gap: 5px;
+}
+.ce-conversion-toolbar .ce-conversion-toolbar__tools .ce-conversion-tool:first-child .ce-conversion-tool__icon svg,
+.ce-conversion-toolbar--showed .ce-conversion-toolbar__tools .ce-conversion-tool:first-child .ce-conversion-tool__icon svg {
+  width: 10px;
+}
+
+.ce-popover__items .ce-popover-item {
+  padding: 10px 0;
+  padding-left: 10px;
+  gap: 10px;
+}
+.ce-popover__items .ce-popover-item[data-item-name=paragraph] .ce-popover-item__icon svg,
+.ce-popover__items .ce-popover-item[data-item-name=header] .ce-popover-item__icon svg {
+  width: 10px;
+  height: 11px;
+}
+
+.ce-popover--opened .cdx-search-field {
+  margin: 10px;
+}
+
+.editor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: calc(100vh - 140px);
+  transition: 0.3s;
+}
+.editor .block-editor-view {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-height: 100vh;
+}
+.editor .block-editor-view .editor-view {
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+.editor .block-editor-view .editor-view .editor-view-render {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.editor .block-editor-view .editor-view .editor-view-render h2 {
+  padding: 1rem 0;
+}
+.editor .block-editor-view .editor-view .editor-view-render .visible-icon {
+  cursor: pointer;
+  font-size: 40px;
+}
+.editor .block-editor-view .editor-view .editor-view-render .visible-icon .eye3-ps {
+  fill: black;
+}
+.editor .block-editor-view .editor-view .editor-view-render .visible-icon .eye4-ps {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 200;
+  transition: 0.3s 0.2s;
+}
+.editor .block-editor-view .editor-view .editor-view-render .visible-icon.active .eye4-ps {
+  stroke-dashoffset: 200;
+}
+.editor .block-editor-view .editor-view .render-ps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 50px 1rem;
+  transition: 0.3s;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element button {
+  background-color: transparent;
+  border: 2px solid #222;
+  color: #222;
+  padding: 4px 7px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element button:hover {
+  background-color: #222;
+  color: white;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .add-svg-ps {
+  z-index: 2;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon {
+  font-size: 2rem;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon .cls-1 {
+  transition: 0.3s;
+  stroke-width: 6;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon .cls-trash-top {
+  transition: 0.3s;
+  transform: translate(0, 0) rotate(0deg);
+  transform-origin: 50% 50%;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon .cls-trash-bottom {
+  transition: 0.3s;
+  transform: translate(0, 0) rotate(0deg);
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon:hover {
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon:hover .cls-1 {
+  stroke: tomato;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon:hover .cls-trash-top {
+  transform: translate(-5px, -13px) rotate(30deg);
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .delete-icon:hover .cls-trash-bottom {
+  transform: translate(0, 20px);
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  max-width: 100%;
+  visibility: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0px gray;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 12px;
+  gap: 10px;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements p {
+  position: absolute;
+  font-size: 0.75rem;
+  left: calc(50% + 15px);
+  top: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(0%, -50%);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: #424242;
+  color: white;
+  font-weight: normal;
+  visibility: hidden;
+  border-radius: 12px;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #424242;
+  top: calc(100% - 5px);
+  left: -7px;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-text,
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-file {
+  font-size: 1.5rem;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-file g {
+  transform-origin: 58% 30%;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-frame {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-line {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-circle {
+  stroke-width: 7;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-mountains {
+  stroke-width: 2;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text2-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text3-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text4-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements:hover p {
+  visibility: visible;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text2-ps {
+  animation: svg-text 1s 0s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text3-ps {
+  animation: svg-text 1s 0.15s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text4-ps {
+  animation: svg-text 1s 0.3s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-file g {
+  animation: svg-file 4s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element:hover .add-svg-ps {
+  opacity: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element.active .add-svg-ps {
+  opacity: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element.active .add-svg-ps .cls-add {
+  transform-origin: 100px 100px;
+  animation: circle-rotate 1.5s infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .render-add-element.active .block-editor-elements {
+  visibility: visible;
+  top: calc(100% + 10px);
+  opacity: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element {
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  align-items: center;
+  position: relative;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .settings-svg {
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -3rem;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .settings-svg .cls-1 {
+  stroke-width: 3;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements {
+  top: 0;
+  left: calc(100% - 5px);
+  width: 100px;
+  max-width: 100%;
+  visibility: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0px gray;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 12px;
+  gap: 10px;
+  z-index: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps {
+  font-size: 2rem;
+  transition: 0.3s;
+  transform: scale(1);
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps .cls-1,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps .cls-1 {
+  stroke: black;
+  stroke-width: 6;
+  transition: 0.3s;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps .cls-2,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps .cls-2 {
+  stroke: none;
+  fill: black;
+  transition: 0.3s;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover {
+  transform: scale(1.2);
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover .cls-1,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover .cls-1 {
+  stroke: royalblue;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover .cls-2,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover .cls-2 {
+  fill: royalblue;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements p {
+  position: absolute;
+  font-size: 0.75rem;
+  left: calc(50% + 15px);
+  top: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(0%, -50%);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: #424242;
+  color: white;
+  font-weight: normal;
+  visibility: hidden;
+  border-radius: 12px;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #424242;
+  top: calc(100% - 5px);
+  left: -7px;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-text,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-file {
+  font-size: 1.5rem;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-file g {
+  transform-origin: 58% 30%;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-frame {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-line {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-circle {
+  stroke-width: 7;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-mountains {
+  stroke-width: 2;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text2-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text3-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text4-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements:hover p {
+  visibility: visible;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text2-ps {
+  animation: svg-text 1s 0s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text3-ps {
+  animation: svg-text 1s 0.15s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text4-ps {
+  animation: svg-text 1s 0.3s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-file g {
+  animation: svg-file 4s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element.active .settings-ps .cls-settings {
+  transform-origin: 100px 100px;
+  animation: circle-rotate 1.5s infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .render-add-element.active .block-editor-elements {
+  visibility: visible;
+  top: calc(100% + 3rem);
+  opacity: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps {
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps p {
+  padding-bottom: 30px;
+  font-size: 1.3rem;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps h2,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps h3,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps h4,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps h5,
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps h6 {
+  padding-bottom: 30px;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps ol.list-ps {
+  counter-reset: item;
+  font-size: 1.2rem;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps ol.list-ps li {
+  display: block;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps ol.list-ps li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps ul.list-ul-ps {
+  list-style: disc;
+  font-size: 1.2rem;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps .delimiter-ps {
+  padding: 40px 0;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps table {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps table thead {
+  background-color: #ddd;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps table th {
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0;
+  border: 1px solid gray;
+}
+.editor .block-editor-view .editor-view .render-ps .text-rendered-box-ps .text-rendered-ps table td {
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element {
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  align-items: center;
+  position: relative;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .settings-svg {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .settings-svg .cls-1 {
+  stroke-width: 3;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements {
+  top: 0;
+  left: calc(100% - 5px);
+  width: 100px;
+  max-width: 100%;
+  visibility: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0px gray;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 12px;
+  gap: 10px;
+  z-index: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps {
+  font-size: 2rem;
+  transition: 0.3s;
+  transform: scale(1);
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps .cls-1,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps .cls-1 {
+  stroke: black;
+  stroke-width: 6;
+  transition: 0.3s;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps .cls-2,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps .cls-2 {
+  stroke: none;
+  fill: black;
+  transition: 0.3s;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover {
+  transform: scale(1.2);
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover .cls-1,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover .cls-1 {
+  stroke: royalblue;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover .cls-2,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover .cls-2 {
+  fill: royalblue;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements p {
+  position: absolute;
+  font-size: 0.75rem;
+  left: calc(50% + 15px);
+  top: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(0%, -50%);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: #424242;
+  color: white;
+  font-weight: normal;
+  visibility: hidden;
+  border-radius: 12px;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #424242;
+  top: calc(100% - 5px);
+  left: -7px;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-text,
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-file {
+  font-size: 1.5rem;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-file g {
+  transform-origin: 58% 30%;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-frame {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-line {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-circle {
+  stroke-width: 7;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-mountains {
+  stroke-width: 2;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text2-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text3-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text4-ps {
+  fill: transparent;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements:hover p {
+  visibility: visible;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text2-ps {
+  animation: svg-text 1s 0s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text3-ps {
+  animation: svg-text 1s 0.15s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text4-ps {
+  animation: svg-text 1s 0.3s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-file g {
+  animation: svg-file 4s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element.active .settings-ps .cls-settings {
+  transform-origin: 100px 100px;
+  animation: circle-rotate 1.5s infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .render-add-element.active .block-editor-elements {
+  visibility: visible;
+  top: calc(100% + 3rem);
+  opacity: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .slider-dots-ps {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .slider-dots-ps span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  transform: scale(1);
+  background-color: gray;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .slider-dots-ps span:hover {
+  background-color: #424242;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .slider-dots-ps span.active {
+  background-color: #222;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: fixed;
+  animation: full-background 0.5s;
+  animation-fill-mode: forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: white;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-borders .cls-1 {
+  stroke-width: 2;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-up-arrow {
+  transform: translate(-40%, 40%);
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-up-arrow .cls-1 {
+  stroke-width: 3;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-up-arrow .cls-arrow {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-down-arrow {
+  transform: translate(40%, -40%);
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-down-arrow .cls-1 {
+  stroke-width: 3;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-maximize-down-arrow .cls-arrow {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon .cls-1 {
+  stroke: white;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon:hover .cls-maximize-up-arrow {
+  animation: minimize-1 1s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-buttons .maximize-icon:hover .cls-maximize-down-arrow {
+  animation: minimize-2 1s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup .image-popup-relative .image-popup-content {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  width: 100%;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .image-popup.active {
+  width: 100%;
+  height: 100%;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+  animation: slider-opacity 0.4s linear forwards;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container video {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  font-size: 0;
+  margin-bottom: -4px;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .img-container {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.66);
+  padding: 0;
+  z-index: 2;
+  color: white;
+  transition: 0.3s;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon {
+  font-size: 6.5rem;
+  cursor: pointer;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-borders .cls-1 {
+  stroke-width: 2;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-up-arrow {
+  transition: 0.5s;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-up-arrow .cls-1 {
+  stroke-width: 3;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-up-arrow .cls-arrow {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-down-arrow {
+  transition: 0.5s;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-down-arrow .cls-1 {
+  stroke-width: 3;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-maximize-down-arrow .cls-arrow {
+  stroke-width: 10;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon .cls-1 {
+  stroke: white;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon:hover .cls-maximize-up-arrow {
+  animation: maximize-1 1s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container .image-buttons .maximize-icon:hover .cls-maximize-down-arrow {
+  animation: maximize-2 1s linear infinite;
+}
+.editor .block-editor-view .editor-view .render-ps .slider-container-ps .iframe-container:hover .image-buttons {
+  width: 100%;
+  height: 100%;
+}
+.editor .render-settings-ps {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ddd;
+  height: 100%;
+  width: 50%;
+  z-index: 1000;
+  transition: 0.3s;
+  transform: translateX(100%);
+}
+.editor .render-settings-ps .render-add-element {
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  align-items: center;
+  position: relative;
+}
+.editor .render-settings-ps .render-add-element .settings-svg {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  cursor: pointer;
+}
+.editor .render-settings-ps .render-add-element .settings-svg .cls-1 {
+  stroke-width: 3;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements {
+  top: 0;
+  left: calc(100% - 5px);
+  width: 100px;
+  max-width: 100%;
+  visibility: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0px gray;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 12px;
+  gap: 10px;
+  z-index: 1;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps {
+  font-size: 2rem;
+  transition: 0.3s;
+  transform: scale(1);
+  cursor: pointer;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps .cls-1,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps .cls-1 {
+  stroke: black;
+  stroke-width: 6;
+  transition: 0.3s;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps .cls-2,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps .cls-2 {
+  stroke: none;
+  fill: black;
+  transition: 0.3s;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover {
+  transform: scale(1.2);
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover .cls-1,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover .cls-1 {
+  stroke: royalblue;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-up-ps:hover .cls-2,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .arrow-down-ps:hover .cls-2 {
+  fill: royalblue;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements p {
+  position: absolute;
+  font-size: 0.75rem;
+  left: calc(50% + 15px);
+  top: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(0%, -50%);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  background-color: #424242;
+  color: white;
+  font-weight: normal;
+  visibility: hidden;
+  border-radius: 12px;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #424242;
+  top: calc(100% - 5px);
+  left: -7px;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-text,
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-file {
+  font-size: 1.5rem;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-file g {
+  transform-origin: 58% 30%;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-frame {
+  stroke-width: 10;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-line {
+  stroke-width: 10;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-circle {
+  stroke-width: 7;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-file .cls-file-mountains {
+  stroke-width: 2;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text2-ps {
+  fill: transparent;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text3-ps {
+  fill: transparent;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements .svg-text .text4-ps {
+  fill: transparent;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements:hover p {
+  visibility: visible;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text2-ps {
+  animation: svg-text 1s 0s linear infinite;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text3-ps {
+  animation: svg-text 1s 0.15s linear infinite;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-text .text4-ps {
+  animation: svg-text 1s 0.3s linear infinite;
+}
+.editor .render-settings-ps .render-add-element .block-editor-elements .editor-elements:hover .svg-file g {
+  animation: svg-file 4s linear infinite;
+}
+.editor .render-settings-ps .render-add-element.active .settings-ps .cls-settings {
+  transform-origin: 100px 100px;
+  animation: circle-rotate 1.5s infinite;
+}
+.editor .render-settings-ps .render-add-element.active .block-editor-elements {
+  visibility: visible;
+  top: calc(100% + 3rem);
+  opacity: 1;
+}
+.editor .render-settings-ps .render-settings-box-ps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps {
+  padding: 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+  width: 100%;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 1.5rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .editor-text,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .editor-text,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .editor-text {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem 0;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .editor-text .codex-editor,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .editor-text .codex-editor,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .editor-text .codex-editor {
+  width: calc(100% - 110px);
+  padding-left: 30px;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .input-box,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .input-box,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .input-box {
+  display: flex;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .input-box label,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .input-box label,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .input-box label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 90px;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .box-inner-el,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .box-inner-el,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .box-inner-el {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  padding-right: 1rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .box-inner-el p,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .box-inner-el p,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .box-inner-el p {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  max-width: 250px;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .box-inner-el .delete-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .box-inner-el .delete-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .box-inner-el .delete-icon {
+  font-size: 1.5rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps .box-inner-el .delete-icon .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps .box-inner-el .delete-icon .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps .box-inner-el .delete-icon .cls-1 {
+  stroke-width: 6;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-ps:last-child,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-ps:last-child,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-ps:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon {
+  font-size: 1.3rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .add-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .add-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .add-icon {
+  font-size: 1.3rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .add-icon .cls-add,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .add-icon .cls-add,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .add-icon .cls-add {
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .add-icon .cls-add .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .add-icon .cls-add .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .add-icon .cls-add .cls-1 {
+  stroke-width: 10;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .add-icon:hover,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .add-icon:hover,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .add-icon:hover {
+  cursor: pointer;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .add-icon:hover .cls-add,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .add-icon:hover .cls-add,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .add-icon:hover .cls-add {
+  animation: circle-rotate 1.5s infinite;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .add-icon:hover .cls-add .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .add-icon:hover .cls-add .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .add-icon:hover .cls-add .cls-1 {
+  stroke: rgb(30, 158, 30);
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper .box-icon .file-input-div,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper .box-icon .file-input-div,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper .box-icon .file-input-div {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span {
+  width: -moz-max-content;
+  width: max-content;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon {
+  font-size: 2rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon .cls-1 {
+  transition: 0.3s;
+  stroke-width: 6;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon .cls-trash-top,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon .cls-trash-top,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon .cls-trash-top {
+  transition: 0.3s;
+  transform: translate(0, 0) rotate(0deg);
+  transform-origin: 50% 50%;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon .cls-trash-bottom,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon .cls-trash-bottom,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon .cls-trash-bottom {
+  transition: 0.3s;
+  transform: translate(0, 0) rotate(0deg);
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon:hover,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon:hover,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon:hover {
+  cursor: pointer;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon:hover .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon:hover .cls-1,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon:hover .cls-1 {
+  stroke: tomato;
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon:hover .cls-trash-top,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon:hover .cls-trash-top,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon:hover .cls-trash-top {
+  transform: translate(-5px, -13px) rotate(30deg);
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps .box-wrapper span .delete-icon:hover .cls-trash-bottom,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps .box-wrapper span .delete-icon:hover .cls-trash-bottom,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps .box-wrapper span .delete-icon:hover .cls-trash-bottom {
+  transform: translate(0, 20px);
+}
+.editor .render-settings-ps .render-settings-box-ps .box-img-ps div.box-wrapper:first-child .box-ps,
+.editor .render-settings-ps .render-settings-box-ps .box-movie-ps div.box-wrapper:first-child .box-ps,
+.editor .render-settings-ps .render-settings-box-ps .box-text-ps div.box-wrapper:first-child .box-ps {
+  align-items: center;
+  justify-content: center;
+}
+.editor .render-settings-ps .render-settings-box-ps .dash-left {
+  position: fixed;
+  top: 50%;
+  z-index: 2;
+  font-size: 2.5rem;
+  left: -4rem;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: 0.3s 0.1s;
+  cursor: pointer;
+}
+.editor .render-settings-ps .render-settings-box-ps .dash-left .cls-1 {
+  stroke-width: 20;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ddd;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements p {
+  padding: 1rem 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-text,
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-file {
+  font-size: 2rem;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-file g {
+  transform-origin: 58% 30%;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-file .cls-file-frame {
+  stroke-width: 10;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-file .cls-file-line {
+  stroke-width: 10;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-file .cls-file-circle {
+  stroke-width: 7;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-file .cls-file-mountains {
+  stroke-width: 2;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-text .text2-ps {
+  fill: transparent;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-text .text3-ps {
+  fill: transparent;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements .svg-text .text4-ps {
+  fill: transparent;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements:hover .svg-text .text2-ps {
+  animation: svg-text 1s 0s linear infinite;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements:hover .svg-text .text3-ps {
+  animation: svg-text 1s 0.15s linear infinite;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements:hover .svg-text .text4-ps {
+  animation: svg-text 1s 0.3s linear infinite;
+}
+.editor .render-settings-ps .render-settings-box-ps .block-editor-elements .editor-elements:hover .svg-file g {
+  animation: svg-file 4s linear infinite;
+}
+.editor .render-settings-ps.active {
+  transform: translateX(0%);
+}
+.editor .render-settings-ps.active .dash-left {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.box-input-ps {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.45rem;
+  padding-left: 0.45rem;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+.box-input-ps:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(30, 158, 30);
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before,
+.video-js .vjs-modal-dialog,
+.vjs-button > .vjs-icon-placeholder:before,
+.vjs-modal-dialog .vjs-modal-dialog-content {
+  margin-top: 0 !important;
+}
+
+.delete-icon {
+  font-size: 12px;
+  stroke-width: 10;
+}
+
+@keyframes slider-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes maximize-1 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(-5%, 5%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes maximize-2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(5%, -5%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes minimize-1 {
+  0% {
+    transform: translate(-40%, 40%);
+  }
+  50% {
+    transform: translate(-35%, 35%);
+  }
+  100% {
+    transform: translate(-40%, 40%);
+  }
+}
+@keyframes minimize-2 {
+  0% {
+    transform: translate(40%, -40%);
+  }
+  50% {
+    transform: translate(35%, -35%);
+  }
+  100% {
+    transform: translate(40%, -40%);
+  }
+}
+@keyframes full-background {
+  0% {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes circle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes svg-file {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes svg-text {
+  0% {
+    fill: transparent;
+  }
+  49% {
+    fill: transparent;
+  }
+  50% {
+    fill: black;
+  }
+  100% {
+    fill: black;
+  }
+}/*# sourceMappingURL=editorPS.css.map */
