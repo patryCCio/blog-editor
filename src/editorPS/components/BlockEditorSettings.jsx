@@ -18,8 +18,8 @@ const BlockEditorSettings = ({ index }) => {
             return null;
         } else {
             return (
-                <div className="editor-elements">
-                    <ArrowUpPS className="arrow-up-ps" onClick={() => setElementsIndex("up", index)} />
+                <div className="editor-elements" onClick={() => setElementsIndex("up", index)}>
+                    <ArrowUpPS className="arrow-up-ps" />
                     <p>
                         Do góry
                     </p>
@@ -35,8 +35,8 @@ const BlockEditorSettings = ({ index }) => {
             return null;
         } else {
             return (
-                <div className="editor-elements">
-                    <ArrowDownPS className="arrow-down-ps" onClick={() => setElementsIndex("down", index)} />
+                <div className="editor-elements" onClick={() => setElementsIndex("down", index)}>
+                    <ArrowDownPS className="arrow-down-ps" />
                     <p>
                         W dół
                     </p>
@@ -48,8 +48,8 @@ const BlockEditorSettings = ({ index }) => {
     return (
         <div className="block-editor-elements">
             {checkArrowUp()}
-            <div className="editor-elements" >
-                <TrashPS className="delete-icon" onClick={() => deleteElement(elements[index].id, index)} />
+            <div className="editor-elements" onClick={() => deleteElement(elements[index].id, index)}>
+                <TrashPS className="delete-icon" />
                 <p>
                     Usuń
                 </p>
